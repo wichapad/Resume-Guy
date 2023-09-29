@@ -3,15 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Wichapad</title>
     <link rel="stylesheet" href="../dist/output.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
   </head>
   <body>
     <div class="bg-resume text-white">
@@ -22,7 +15,7 @@
         >
           <!-- Logo -->
           <div class="logo-resume">guy</div>
-          <ul class="flex">
+          <ul class="hidden sm:flex">
             <li>
               <a class="link-resume" href="#">Home</a>
             </li>
@@ -67,7 +60,7 @@
                   alt=""
                 />
               </div>
-              <div class="w-[450px] py-4">
+              <div class="p-4 md:p-0 md:w-[550px]">
                 <p class="text-[2rem]">Hi</p>
                 <p class="text-[2rem]">I'm Guy</p>
                 <p class="font-light leading-relaxed">
@@ -98,7 +91,7 @@
               </p>
             </div>
             <div class="md:flex">
-              <div class="w-[450px] flex flex-col justify-between md:p-4">
+              <div class="flex flex-col md:w-[400px] md:p-3">
                 <div class="text-[1.3rem]">
                   <p><span class="text-linear">E</span>ducation</p>
                   <div class="flex">
@@ -116,19 +109,19 @@
                     src="../asset/video/Education.mp4"
                   ></video>
                 </div>
-                <div class="flex justify-between">
+                <div class="flex justify-between text-[0.8rem]">
                   <div>
                     <p>Pibulsongkram Rajabhat University</p>
                     <p class="text-gray-400">Human Resources Management</p>
                   </div>
-                  <div class="flex justify-center items-center">
+                  <div>
                     <p class="bg-gray-300 px-3 py-2 rounded-[10px] text-black">
                       2014 - 2018
                     </p>
                   </div>
                 </div>
               </div>
-              <div class="w-[450px] flex flex-col justify-between md:p-4">
+              <div class="flex flex-col md:w-[400px] md:p-3">
                 <div class="text-[1.3rem]">
                   <p><span class="text-linear">E</span>xperience</p>
                   <div class="flex">
@@ -146,12 +139,12 @@
                     src="../asset/video/Experience.mp4"
                   ></video>
                 </div>
-                <div class="flex justify-between">
+                <div class="flex justify-between text-[0.8rem]">
                   <div>
                     <p>Sushi Hiro</p>
                     <p class="text-gray-400">IT Support</p>
                   </div>
-                  <div class="flex justify-center items-center">
+                  <div>
                     <p class="bg-gray-300 px-3 py-2 rounded-[10px] text-black">
                       2021 - Present
                     </p>
@@ -284,43 +277,49 @@
                 </p>
               </div>
             </div>
-            <div class="flex flex-col items-center">
-              <div class="mt-4 border rounded-[10px]">
+            <div class="m-2 md:m-0">
+              <div class="p-4 border rounded-[10px]">
                 <form>
-                  <div class="m-4">
-                    <input
-                      class="input-contact"
-                      type="text"
-                      placeholder="Enter Your Name..."
-                    />
-                    <input
-                      class="input-contact"
-                      type="text"
-                      placeholder="Enter Your Phone..."
-                    />
+                  <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                    <div>
+                      <input
+                        class="input-contact"
+                        type="text"
+                        placeholder="Enter Your Name..."
+                      />
+                    </div>
+                    <div>
+                      <input
+                        class="input-contact"
+                        type="text"
+                        placeholder="Enter Your Phone..."
+                      />
+                    </div>
+                    <div>
+                      <input
+                        class="input-contact"
+                        type="text"
+                        placeholder="Enter Your Email..."
+                      />
+                    </div>
+                    <div>
+                      <input
+                        class="input-contact"
+                        type="text"
+                        placeholder="Enter Your Subject..."
+                      />
+                    </div>
                   </div>
-                  <div class="m-4">
-                    <input
-                      class="input-contact"
-                      type="text"
-                      placeholder="Enter Your Email..."
-                    />
-                    <input
-                      class="input-contact"
-                      type="text"
-                      placeholder="Enter Your Subject..."
-                    />
-                  </div>
-                  <div class="text-center">
+                  <div>
                     <textarea
-                      class="input-contact"
+                      class="input-contact my-2"
                       cols="50"
                       rows="10"
                       placeholder="Type Your Message"
                     ></textarea>
                   </div>
                 </form>
-                <div class="text-center mb-3">
+                <div class="text-center">
                   <button
                     class="border px-6 py-2 rounded-[10px] text-[12px] uppercase active:scale-95"
                   >

@@ -154,10 +154,11 @@
         border: 1px solid #FFF;
         border-radius: 10px;
         background: transparent;
-        padding: 0.5rem 1.5rem;
+        width: 100%;
+        padding: 0.5rem 1.5rem 0.5rem 0.5rem;
         font-size: 14px;
         outline: none;
-        margin: 0.2rem 0.5rem;
+        
     }
 
     /* --------- Footer --------- */
