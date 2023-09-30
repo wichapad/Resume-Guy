@@ -18,24 +18,28 @@
       <div class="flex flex-col m-auto max-w-[1440px]">
         <!-- Start Navbar -->
         <nav
-          class="flex justify-between items-center border-b-2 px-[1rem] md:px-[3rem]"
+          class="relative flex justify-center items-center border-b-2 px-[1rem] sm:justify-between sm:px-[3rem]"
         >
           <!-- Logo -->
           <div class="logo-resume">guy</div>
-          <ul class="hidden sm:flex">
-            <li>
-              <a class="link-resume" href="#">Home</a>
-            </li>
-            <li>
-              <a class="link-resume" href="#about">About</a>
-            </li>
-            <li>
-              <a class="link-resume" href="#portfolio">Portfolio</a>
-            </li>
-            <li>
-              <a class="link-resume" href="#contact">Contact</a>
-            </li>
-          </ul>
+          <div id="navbar-mobile" class="fixed z-[999] top-[5rem] w-[350px] sm:static">
+            <ul
+              class="flex justify-center items-center p-2 rounded-[30px] uppercase bg-white bg-opacity-50 hover:bg-white sm:hover:bg-transparent sm:bg-transparent text-black sm:text-white transition duration-300 ease-in-out"
+            >
+              <li>
+                <a class="sm:link-resume" href="#">Home</a>
+              </li>
+              <li>
+                <a class="sm:link-resume" href="#about">About</a>
+              </li>
+              <li>
+                <a class="sm:link-resume" href="#portfolio">Portfolio</a>
+              </li>
+              <li>
+                <a class="sm:link-resume" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
         </nav>
         <!-- End Navbar -->
 
@@ -364,5 +368,7 @@
         <!-- End Footer-->
       </div>
     </div>
+
+    <script src="./script.js"></script>
   </body>
 </html>
