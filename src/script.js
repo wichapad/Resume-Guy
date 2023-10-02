@@ -46,7 +46,7 @@ function sendMail() {
       document.getElementById("subject").value = "";
       document.getElementById("message").value = "";
       console.log(res);
-      alert("Thank you," + params['name'] + ' ! Your message has been sent');
+      alert("Thank you, " + params['name'] + ' ! Your message has been sent');
     })
     .catch((err) => console.log(err));
 }
