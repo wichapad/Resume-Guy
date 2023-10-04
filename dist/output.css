@@ -707,6 +707,34 @@ li {
   top: 5rem;
 }
 
+.left-0{
+  left: 0px;
+}
+
+.left-\[5rem\]{
+  left: 5rem;
+}
+
+.left-\[3\%\]{
+  left: 3%;
+}
+
+.left-\[5\%\]{
+  left: 5%;
+}
+
+.left-\[8\%\]{
+  left: 8%;
+}
+
+.left-\[0\]{
+  left: 0;
+}
+
+.left-\[2rem\]{
+  left: 2rem;
+}
+
 .z-\[999\]{
   z-index: 999;
 }
@@ -790,8 +818,24 @@ li {
   width: 70%;
 }
 
+.w-full{
+  width: 100%;
+}
+
+.w-\[380px\]{
+  width: 380px;
+}
+
 .max-w-\[1440px\]{
   max-width: 1440px;
+}
+
+.max-w-\[350px\]{
+  max-width: 350px;
+}
+
+.max-w-\[380px\]{
+  max-width: 380px;
 }
 
 .resize{
@@ -929,6 +973,21 @@ li {
 .py-\[1\.8rem\]{
   padding-top: 1.8rem;
   padding-bottom: 1.8rem;
+}
+
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-\[5rem\]{
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.px-\[50px\]{
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .pl-1{
