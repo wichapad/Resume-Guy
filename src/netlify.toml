@@ -1,0 +1,5 @@
+[[redirects]]
+
+from = "/*"
+to = "src/resume.html"
+status = 200
