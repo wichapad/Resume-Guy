@@ -192,59 +192,61 @@
             </p>
             <p>Visit to my project</p>
           </div>
-          <div class="flex justify-center my-4">
+          <div id="wrapper" class="flex justify-center my-4 mx-2">
             <div class="flex items-center p-2">
-              <button class="arrows-portfolio">
+              <button id="left" class="arrows-portfolio">
                 <i class="p-3 text-xl fa-solid fa-arrow-left-long"></i>
               </button>
             </div>
-            <div class="flex">
+
+            <div id="carousel-portfolio" class="carousel-portfolio">
               <div class="container-image-portfolio">
                 <a href="https://showroom-ticket.vercel.app/" target="_blank"
                   ><img
                     class="image-portfolio"
                     src="../asset/image/HomePage.jpg"
                     alt=""
-                /></a>
+                  />
+
+                  <div class="bg-image-portfolio">
+                    <p class="text-portfolio">Showroom-ticket</p>
+                  </div>
+                </a>
               </div>
               <div class="container-image-portfolio">
-                <a
-                  href="https://resume-mook.netlify.app"
-                  target="_blank"
+                <a href="https://resume-mook.netlify.app" target="_blank"
                   ><img
                     class="image-portfolio"
                     src="../asset/image/Resume-mook.jpg"
                     alt=""
-                /></a>
+                  />
+                  <div class="bg-image-portfolio">
+                    <p class="text-portfolio">Resume-Mook</p>
+                  </div></a
+                >
               </div>
-              <div class="container-image-portfolio hidden">
-                <a href=""
+              <div class="container-image-portfolio">
+                <a
+                  href="https://clone-facebook-by-guy.netlify.app"
+                  target="_blank"
                   ><img
                     class="image-portfolio"
-                    src="../asset/image/HomePage.jpg"
+                    src="../asset/image/clone-facebook.jpg"
                     alt=""
-                /></a>
-              </div>
-              <div class="container-image-portfolio hidden">
-                <a href=""
-                  ><img
-                    class="image-portfolio"
-                    src="../asset/image/HomePage.jpg"
-                    alt=""
-                /></a>
+                  />
+                  <div class="bg-image-portfolio">
+                    <p class="text-portfolio">Clone-facebook</p>
+                  </div></a
+                >
               </div>
             </div>
+
             <div class="flex items-center p-2">
-              <button class="arrows-portfolio">
+              <button id="right" class="arrows-portfolio">
                 <i class="p-3 text-xl fa-solid fa-arrow-right-long"></i>
               </button>
             </div>
           </div>
-          <button
-            class="px-6 py-3 bg-[#8F00FF] rounded-[10px] uppercase transition ease-in-out active:-translate active:scale-95"
-          >
-            Visit
-          </button>
         </section>
         <!-- End Portfolio-->
 

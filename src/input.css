@@ -124,18 +124,52 @@
     }
 
     /* --------- Image Porfolio --------- */
+    .carousel-portfolio {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: calc((100% / 3) - 12px);
+        overflow: hidden;
+        gap: 16px;
+        scroll-behavior: smooth;
+    }
+  
+    .carousel-portfolio.dragging{
+        scroll-behavior: auto;
+    }
+
     .container-image-portfolio {
+        position: relative;
         border: 2px solid #8F00FF;
         border-radius: 10px;
         box-shadow: 2px 2px 5px #CC00FF;
-        margin: 0.5rem;
+        margin: 0.5rem 0;
     }
 
     .image-portfolio {
-        width: 250px;
-        aspect-ratio: 1/1;
+        aspect-ratio: 16/9;
         object-fit: cover;
         border-radius: 10px;
+    }
+
+    .text-portfolio {
+        display: none;
+    }
+
+    .container-image-portfolio:hover .bg-image-portfolio {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+
+    .container-image-portfolio:hover .text-portfolio {
+        display: block;
     }
 
     .arrows-portfolio {
@@ -158,7 +192,7 @@
         padding: 0.5rem 1.5rem 0.5rem 0.5rem;
         font-size: 14px;
         outline: none;
-        
+
     }
 
     /* --------- Footer --------- */
@@ -174,4 +208,14 @@
         background: #8F00FF;
     }
 
+    @media screen and (max-width: 900px){
+        .carousel-portfolio{
+            grid-auto-columns: calc((100% / 2) - 9px);
+        }
+    }
+    @media screen and (max-width: 600px){
+        .carousel-portfolio{
+            grid-auto-columns: 100%;
+        }
+    }
 }
