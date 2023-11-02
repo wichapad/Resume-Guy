@@ -644,18 +644,18 @@ li {
 
 /* --------- Image Porfolio --------- */
 
-.carousel-portfolio {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: calc((100% / 3) - 12px);
-  overflow: hidden;
-  gap: 16px;
-  scroll-behavior: smooth;
-}
+/* .carousel-portfolio {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: calc((100% / 3) - 12px);
+        overflow: hidden;
+        gap: 16px;
+        scroll-behavior: smooth;
+    } */
 
-.carousel-portfolio.dragging{
-  scroll-behavior: auto;
-}
+/* .carousel-portfolio.dragging{
+        scroll-behavior: auto;
+    } */
 
 .container-image-portfolio {
   position: relative;
@@ -666,9 +666,12 @@ li {
 }
 
 .image-portfolio {
+  width: 250px;
   aspect-ratio: 16/9;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
   border-radius: 10px;
 }
 
@@ -765,6 +768,10 @@ li {
   margin: auto;
 }
 
+.m-4{
+  margin: 1rem;
+}
+
 .mx-2{
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -783,6 +790,11 @@ li {
 .my-\[4rem\]{
   margin-top: 4rem;
   margin-bottom: 4rem;
+}
+
+.mx-4{
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .mb-2{
@@ -849,6 +861,10 @@ li {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .flex-col{
   flex-direction: column;
 }
@@ -867,6 +883,10 @@ li {
 
 .justify-evenly{
   justify-content: space-evenly;
+}
+
+.gap-2{
+  gap: 0.5rem;
 }
 
 .gap-4{
@@ -1124,6 +1144,10 @@ li {
 
   .md\:w-\[550px\]{
     width: 550px;
+  }
+
+  .md\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:flex-row{

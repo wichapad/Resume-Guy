@@ -124,18 +124,19 @@
     }
 
     /* --------- Image Porfolio --------- */
-    .carousel-portfolio {
+    /* .carousel-portfolio {
         display: grid;
         grid-auto-flow: column;
         grid-auto-columns: calc((100% / 3) - 12px);
         overflow: hidden;
         gap: 16px;
         scroll-behavior: smooth;
-    }
+    } */
+   
   
-    .carousel-portfolio.dragging{
+    /* .carousel-portfolio.dragging{
         scroll-behavior: auto;
-    }
+    } */
 
     .container-image-portfolio {
         position: relative;
@@ -146,8 +147,10 @@
     }
 
     .image-portfolio {
+        width: 250px;
         aspect-ratio: 16/9;
         object-fit: cover;
+        object-position: top;
         border-radius: 10px;
     }
 
